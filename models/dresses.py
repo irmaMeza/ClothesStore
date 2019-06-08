@@ -2,13 +2,13 @@
 
 class Dress:
 
-    def __init__(self, size, style, color, brand, material, long):
-        self.size = size
-        self.style = style
-        self.color = color
-        self.brand= brand
-        self.material= material
-        self.size = long
+    def __init__(self, sizes, styles, colors, brands, materials, longs):
+        self.sizes = sizes
+        self.styles = styles
+        self.colors = colors
+        self.brands= brands
+        self.materials= materials
+        self.longs = longs
 
     def getJson(self):
         return vars(self)
