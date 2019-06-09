@@ -12,4 +12,3 @@ class Shirt(object):
     def getJson(self):
         return jsonify( vars(self) )
 
-        
