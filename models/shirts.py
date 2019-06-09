@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-class Shirt(object):
+class Shirt:
 
     def __init__(self, brand, color, size):
         self.brand = brand
@@ -10,4 +10,3 @@ class Shirt(object):
     def getJson(self):
         return vars(self)
 
-        
