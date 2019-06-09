@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from flask import jsonify
+
 class Dress: 
 
     def __init__(self, size, style, color, brand, material, long):
@@ -11,5 +13,5 @@ class Dress:
         self.long = long
 
     def getJson(self):
-        return vars(self)
+        return jsonify( vars(self) )
 
